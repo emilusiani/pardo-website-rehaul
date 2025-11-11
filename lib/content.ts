@@ -1,5 +1,27 @@
 // Static fallback content (used until CMS is configured)
-export const staticContent = {
+
+export interface Service {
+  key: string;
+  title: string;
+  description: string;
+  icon: string;
+}
+
+export interface Project {
+  key: string;
+  image: string;
+  alt: string;
+  tag: string;
+  title: string;
+  summary: string;
+}
+
+export interface ContentData {
+  services: Service[];
+  projects: Project[];
+}
+
+export const staticContent: ContentData = {
   services: [
     {
       key: 'hotel',

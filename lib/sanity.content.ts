@@ -1,7 +1,7 @@
 import { sanityClient } from './sanity.client';
-import { staticContent } from './content';
+import { staticContent, type ContentData } from './content';
 
-export async function loadContent() {
+export async function loadContent(): Promise<ContentData> {
   if (!sanityClient) return staticContent;
 
   const services = await sanityClient.fetch(
