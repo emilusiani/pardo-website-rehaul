@@ -17,3 +17,23 @@
   NEXT_PUBLIC_SANITY_PROJECT_ID=...
   NEXT_PUBLIC_SANITY_DATASET=production
 - Use schemas in sanity/schema.ts
+
+## Website Inspection Agent
+
+This project includes an automated inspection agent that analyzes the website for improvements in:
+- ⚡ Performance
+- 🎨 Aesthetics
+- ⚙️ Functionality
+- 🔒 Security
+- ♿ Accessibility
+- 🔍 SEO
+
+### Usage
+
+```bash
+npm run inspect
+```
+
+This will generate a comprehensive report both in the console and as `INSPECTION_REPORT.md`.
+
+For detailed documentation, see [scripts/README.md](scripts/README.md).
