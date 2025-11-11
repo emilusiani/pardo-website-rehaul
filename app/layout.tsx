@@ -2,6 +2,8 @@ import './globals.css';
 import Image from 'next/image';
 import type { Metadata } from 'next';
 import Header from './Header';
+import { WebVitals } from './WebVitals';
+import BackToTop from './BackToTop';
 
 export const metadata: Metadata = {
   title: 'PARDO Construction LLC | Hospitality Remodeling',
@@ -94,6 +96,8 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
         />
       </head>
       <body>
+        <WebVitals />
+        <BackToTop />
         <a className="skip-link" href="#main">Skip to content</a>
 
         <Header />

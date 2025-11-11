@@ -1,8 +1,13 @@
 import Image from 'next/image';
+import dynamic from 'next/dynamic';
 import { loadContent } from '@/lib/sanity.content';
 import { staticContent } from '@/lib/content';
 import { sanitizeHtml } from '@/lib/sanitize';
-import ContactForm from './ContactForm';
+
+const ContactForm = dynamic(() => import('./ContactForm'), {
+  loading: () => <div style={{ padding: '2rem', textAlign: 'center' }}>Loading...</div>,
+  ssr: false,
+});
 
 export default async function Page() {
   const data = await loadContent().catch(() => staticContent);
