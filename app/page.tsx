@@ -1,6 +1,13 @@
 import Image from 'next/image';
+import dynamic from 'next/dynamic';
 import { loadContent } from '@/lib/sanity.content';
 import { staticContent } from '@/lib/content';
+import { sanitizeHtml } from '@/lib/sanitize';
+
+const ContactForm = dynamic(() => import('./ContactForm'), {
+  loading: () => <div style={{ padding: '2rem', textAlign: 'center' }}>Loading...</div>,
+  ssr: false,
+});
 
 export default async function Page() {
   const data = await loadContent().catch(() => staticContent);
@@ -29,7 +36,7 @@ export default async function Page() {
 
       <div className="wrap divider" aria-hidden="true">
         <span className="divider-mark">
-          <Image src="/assets/logo.png" alt="" width={28} height={28} />
+          <Image src="/assets/logo.png" alt="" width={28} height={28} loading="lazy" />
         </span>
       </div>
 
@@ -47,7 +54,7 @@ export default async function Page() {
       <section id="services" className="section">
         <div className="wrap">
           <div className="section-head">
-            <Image className="section-logo" src="/assets/logo.png" alt="" width={28} height={28} />
+            <Image className="section-logo" src="/assets/logo.png" alt="" width={28} height={28} loading="lazy" />
             <h2>Core Services</h2>
             <p>End‑to‑end hospitality remodeling with disciplined phasing, clear communication, and brand‑consistent results.</p>
           </div>
@@ -55,7 +62,7 @@ export default async function Page() {
           <div className="services-grid">
             {data.services.map((s) => (
               <article className="card" key={s.key}>
-                <div className="icon" aria-hidden="true" dangerouslySetInnerHTML={{ __html: s.icon }} />
+                <div className="icon" aria-hidden="true" dangerouslySetInnerHTML={{ __html: sanitizeHtml(s.icon) }} />
                 <h3>{s.title}</h3>
                 <p>{s.description}</p>
                 <a className="more" href="#">Learn More →</a>
@@ -68,9 +75,9 @@ export default async function Page() {
       <section className="banner section alt" aria-label="Featured property">
         <div className="wrap banner-inner">
           <div className="banner-media">
-            <Image src="/assets/image1.jpg" alt="Hotel exterior with illuminated facade and entry plaza at night" width={1200} height={800} />
+            <Image src="/assets/image1.jpg" alt="Hotel exterior with illuminated facade and entry plaza at night" width={1200} height={800} loading="lazy" />
             <div className="banner-badge">
-              <Image src="/assets/logo.png" alt="" width={24} height={24} />
+              <Image src="/assets/logo.png" alt="" width={24} height={24} loading="lazy" />
             </div>
           </div>
           <div className="banner-copy">
@@ -84,7 +91,7 @@ export default async function Page() {
       <section id="portfolio" className="section">
         <div className="wrap">
           <div className="section-head">
-            <Image className="section-logo" src="/assets/logo.png" alt="" width={28} height={28} />
+            <Image className="section-logo" src="/assets/logo.png" alt="" width={28} height={28} loading="lazy" />
             <h2>Selected Work</h2>
             <p>Representative engagements across business hotels, resorts, and boutique properties.</p>
           </div>
@@ -92,13 +99,13 @@ export default async function Page() {
           <div className="portfolio-grid">
             {data.projects.map((p) => (
               <article className="project" key={p.key}>
-                <Image src={p.image} alt={p.alt} width={1200} height={800} />
+                <Image src={p.image} alt={p.alt} width={1200} height={800} loading="lazy" />
                 <div className="project-overlay" />
                 <div className="project-body">
                   <span className="tag">{p.tag}</span>
                   <h3>{p.title}</h3>
                   <p>{p.summary}</p>
-                  <Image className="project-corner-logo" src="/assets/logo.png" alt="" width={22} height={22} />
+                  <Image className="project-corner-logo" src="/assets/logo.png" alt="" width={22} height={22} loading="lazy" />
                 </div>
               </article>
             ))}
@@ -124,12 +131,16 @@ export default async function Page() {
         <div className="wrap">
           <div className="cta">
             <div className="cta-logo" aria-hidden="true">
-              <Image src="/assets/logo.png" alt="" width={46} height={46} />
+              <Image src="/assets/logo.png" alt="" width={46} height={46} loading="lazy" />
             </div>
             <h2>Ready to Plan Your Next Property Upgrade?</h2>
             <p>Engage our team for a structured feasibility review—phasing strategy, risk matrix, and budget validation tailored to your asset.</p>
-            <div className="cta-actions">
-              <a className="btn" href="mailto:info@pardoconstructionllc.com">Request Consultation</a>
+            
+            <ContactForm />
+            
+            <div className="cta-actions" style={{ marginTop: '2rem' }}>
+              <p style={{ textAlign: 'center', marginBottom: '1rem' }}>Or reach us directly:</p>
+              <a className="btn outline" href="mailto:info@pardoconstructionllc.com">Email Us</a>
               <a className="btn outline" href="tel:+15551234567">(555) 123‑4567</a>
             </div>
           </div>

@@ -10,11 +10,12 @@
     "inspect": "node scripts/inspect-website.js"
   },
   "dependencies": {
-    "next": "14.2.5",
+    "next": "^14.2.33",
+    "next-sanity": "^7.0.9",
     "react": "18.2.0",
     "react-dom": "18.2.0",
-    "next-sanity": "^7.0.9",
-    "sanity": "^3.47.1"
+    "sanity": "^3.47.1",
+    "sharp": "^0.34.5"
   },
   "devDependencies": {
     "@types/node": "^20.11.30",

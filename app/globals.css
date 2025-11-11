@@ -17,11 +17,14 @@
 }
 *,*::before,*::after{ box-sizing:border-box; }
 html,body{ height:100%; }
+html{ scroll-behavior:smooth; }
 body{ margin:0; font-family:var(--font); color:var(--charcoal); background:var(--white); line-height:1.55; -webkit-font-smoothing:antialiased; text-rendering:optimizeLegibility; }
 img{ max-width:100%; display:block; height:auto; }
 a{ color:var(--primary-dark); text-decoration:none; }
 a:hover,a:focus{ text-decoration:underline; }
+a:focus-within{ outline:3px solid var(--primary); outline-offset:3px; }
 :focus-visible{ outline:3px solid var(--primary); outline-offset:3px; }
+button:focus-within,input:focus-within,textarea:focus-within,select:focus-within{ outline:3px solid var(--primary); outline-offset:3px; }
 .sr-only{ position:absolute; width:1px; height:1px; padding:0; margin:-1px; overflow:hidden; clip:rect(0,0,0,0); border:0; }
 .skip-link{ position:absolute; left:0; top:-100%; background:var(--primary); color:var(--white); padding:var(--s-3) var(--s-4); border-radius:0 0 var(--r-s) var(--r-s); z-index:1000; transition:top var(--transition); }
 .skip-link:focus{ top:0; }
@@ -139,3 +142,31 @@ p{ margin:0 0 var(--s-4); }
 
 /* Reduced motion */
 @media (prefers-reduced-motion:reduce){ *{ transition:none !important; animation:none !important; } }
+
+/* Scroll animations */
+@keyframes fadeInUp {
+  from {
+    opacity: 0;
+    transform: translateY(30px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  .section { animation: fadeInUp 0.6s ease-out; }
+  .card { animation: fadeInUp 0.6s ease-out; animation-fill-mode: both; }
+  .card:nth-child(1) { animation-delay: 0.1s; }
+  .card:nth-child(2) { animation-delay: 0.2s; }
+  .card:nth-child(3) { animation-delay: 0.3s; }
+  .card:nth-child(4) { animation-delay: 0.4s; }
+  .project { animation: fadeInUp 0.6s ease-out; animation-fill-mode: both; }
+  .project:nth-child(1) { animation-delay: 0.1s; }
+  .project:nth-child(2) { animation-delay: 0.2s; }
+  .project:nth-child(3) { animation-delay: 0.3s; }
+  .project:nth-child(4) { animation-delay: 0.4s; }
+}
+
+.legal{ padding-top:var(--s-6); border-top:1px solid rgba(255,255,255,.1); text-align:center; font-size:.9rem; opacity:.7; }
