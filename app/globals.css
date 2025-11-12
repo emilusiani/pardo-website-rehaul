@@ -44,6 +44,7 @@ p{ margin:0 0 var(--s-4); }
 .logo{ height:auto; width:auto; max-height:44px; }
 .menu{ list-style:none; display:flex; gap:var(--s-6); margin:0; padding:0; }
 .menu a{ color:var(--near-black); font-weight:600; position:relative; padding:6px 0; }
+.menu a:focus-visible{ outline:3px solid var(--color-ring); outline-offset:3px; border-radius:4px; }
 .menu a::after{ content:""; position:absolute; left:0; bottom:-6px; width:0; height:2px; background:var(--primary); transition:width var(--transition); }
 .menu a:hover::after, .menu a[aria-current="page"]::after{ width:100%; }
 .nav-toggle{ display:none; border:1px solid var(--offwhite); background:var(--white); color:var(--near-black); padding:8px 12px; border-radius:var(--r-s); }
@@ -56,6 +57,7 @@ p{ margin:0 0 var(--s-4); }
 /* Buttons */
 .btn{ display:inline-flex; align-items:center; justify-content:center; gap:8px; padding:12px 18px; font-weight:800; border-radius:var(--r-s); border:1px solid var(--primary); background:var(--primary); color:var(--white); transition:transform var(--transition), box-shadow var(--transition), background var(--transition), color var(--transition); cursor:pointer; }
 .btn:hover{ transform:translateY(-2px); box-shadow:var(--shadow-s); background:var(--primary-dark); border-color:var(--primary-dark); }
+.btn:focus-visible{ outline:3px solid var(--color-ring); outline-offset:3px; }
 .btn:active{ transform:translateY(0); }
 .btn.outline{ background:var(--white); color:var(--primary-dark); border-color:var(--primary-dark); }
 .btn.outline:hover{ background:var(--offwhite); }
