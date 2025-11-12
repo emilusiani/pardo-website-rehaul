@@ -8,7 +8,10 @@
     "start": "next start",
     "lint": "next lint",
     "inspect": "node scripts/inspect-website.js",
-    "validate-agents": "node scripts/validate-agents.js"
+    "validate-agents": "node scripts/validate-agents.js",
+    "dev:local": "next dev -p 4000 -H 127.0.0.1",
+    "storybook": "npx storybook@8.6.14 dev -p 6006",
+    "build-storybook": "npx storybook@8.6.14 build"
   },
   "dependencies": {
     "next": "^14.2.33",
@@ -19,10 +22,21 @@
     "sharp": "^0.34.5"
   },
   "devDependencies": {
-    "@types/node": "^20.11.30",
-    "@types/react": "^18.2.15",
-    "eslint": "^8.56.0",
+    "@babel/core": "7.26.0",
+    "@babel/preset-env": "7.26.0",
+    "@babel/preset-react": "7.26.3",
+    "@storybook/addon-a11y": "8.6.14",
+    "@storybook/addon-docs": "8.6.14",
+    "@storybook/addon-essentials": "8.6.14",
+    "@storybook/addon-themes": "8.6.14",
+    "@storybook/react-webpack5": "8.6.14",
+    "@types/node": "20.11.30",
+    "@types/react": "18.2.15",
+    "babel-loader": "9.2.1",
+    "eslint": "8.56.0",
     "eslint-config-next": "14.2.5",
-    "typescript": "^5.6.2"
+    "eslint-plugin-storybook": "10.0.7",
+    "storybook": "8.6.14",
+    "typescript": "5.6.2"
   }
 }

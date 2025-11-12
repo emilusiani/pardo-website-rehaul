@@ -1,3 +1,4 @@
+import '../styles/theme.css';
 import './globals.css';
 import Image from 'next/image';
 import type { Metadata } from 'next';

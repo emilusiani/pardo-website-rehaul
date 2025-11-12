@@ -13,8 +13,8 @@ export default function Loading() {
       <div style={{
         width: '48px',
         height: '48px',
-        border: '4px solid #f3f3f3',
-        borderTop: '4px solid #789271',
+        border: '4px solid var(--color-border-subtle)',
+        borderTop: '4px solid var(--color-brand-600)',
         borderRadius: '50%',
         animation: 'spin 1s linear infinite',
       }} />

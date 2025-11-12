@@ -213,14 +213,14 @@ export default function ContactForm() {
         }
 
         .required {
-          color: #d32f2f;
+          color: var(--color-danger-600);
         }
 
         .form-group input,
         .form-group textarea {
           padding: 0.75rem;
-          border: 2px solid #e0e0e0;
-          border-radius: 4px;
+          border: 2px solid var(--color-border);
+          border-radius: var(--radius-sm);
           font-size: 1rem;
           font-family: inherit;
           transition: border-color 0.2s;
@@ -234,27 +234,27 @@ export default function ContactForm() {
 
         .form-group input:disabled,
         .form-group textarea:disabled {
-          background-color: #f5f5f5;
+          background-color: var(--color-bg-muted);
           cursor: not-allowed;
         }
 
         .form-message {
           padding: 1rem;
-          border-radius: 4px;
+          border-radius: var(--radius-sm);
           margin-bottom: 1.5rem;
           font-weight: 500;
         }
 
         .form-message.error {
-          background-color: #ffebee;
-          color: #c62828;
-          border: 1px solid #ef5350;
+          background-color: var(--color-danger-50);
+          color: var(--color-danger-700);
+          border: 1px solid var(--color-danger-400);
         }
 
         .form-message.success {
-          background-color: #e8f5e9;
-          color: #2e7d32;
-          border: 1px solid #66bb6a;
+          background-color: var(--color-success-50);
+          color: var(--color-success-600);
+          border: 1px solid var(--color-success-400);
         }
 
         .btn-submit {

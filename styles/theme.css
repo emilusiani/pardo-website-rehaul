@@ -1,0 +1,59 @@
+:root{
+  /* Base brand palette (kept for compatibility) */
+  --primary:#789271;
+  --primary-dark:#46523D;
+  --offwhite:#F5F4F0;
+  --near-black:#212021;
+  --charcoal:#111111;
+  --white:#FFFFFF;
+
+  /* Semantic colors */
+  --color-bg: #FFFFFF;
+  --color-bg-muted: #F5F4F0;
+  --color-surface: #FFFFFF;
+  --color-fg: #111111;
+  --color-fg-muted: #666666;
+
+  --color-brand-600: #789271;
+  --color-brand-700: #46523D;
+  --color-fg-on-brand: #FFFFFF;
+
+  --color-border: #E0E0E0;
+  --color-border-subtle: #F3F3F3;
+  --color-ring: #789271;
+
+  --color-success-50:#E8F5E9; --color-success-400:#66BB6A; --color-success-600:#2E7D32; --color-success-700:#1B5E20;
+  --color-danger-50:#FFEBEE; --color-danger-400:#EF5350; --color-danger-600:#D32F2F; --color-danger-700:#C62828;
+  --color-info-50:#E3F2FD; --color-info-400:#42A5F5; --color-info-600:#1E88E5;
+  --color-warn-50:#FFF8E1; --color-warn-400:#FFB300; --color-warn-600:#FB8C00;
+
+  /* Radii & shadows */
+  --radius-sm: 6px; --radius-md: 10px; --radius-lg: 14px; --radius-full: 999px;
+  --shadow-xs: 0 1px 3px rgba(0,0,0,.08), 0 1px 2px rgba(0,0,0,.06);
+  --shadow-s: 0 2px 8px rgba(0,0,0,.12);
+  --shadow-m: 0 6px 24px rgba(0,0,0,.14);
+  --focus-ring: 0 0 0 3px rgba(120,146,113,.45);
+}
+
+/* Dark theme */
+[data-theme="dark"]{
+  --color-bg: #111111;
+  --color-bg-muted: #212021;
+  --color-surface: #212021;
+  --color-fg: #F5F4F0;
+  --color-fg-muted: #C7C7C7;
+
+  --color-border: #2F2F2F;
+  --color-border-subtle: #1C1C1C;
+  --color-fg-on-brand: #111111;
+  --focus-ring: 0 0 0 3px rgba(120,146,113,.6);
+}
+
+/* High contrast mode */
+[data-contrast="high"]{
+  --color-fg: #000000;
+  --color-fg-muted: #1A1A1A;
+  --color-bg: #FFFFFF;
+  --color-border: #000000;
+  --color-ring: #000000;
+}

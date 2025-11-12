@@ -8,3 +8,6 @@ out
 
 # Generated reports
 INSPECTION_REPORT.md
+
+*storybook.log
+storybook-static

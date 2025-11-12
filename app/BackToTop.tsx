@@ -51,8 +51,8 @@ export default function BackToTop() {
           border: none;
           font-size: 1.5rem;
           cursor: pointer;
-          box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
-          transition: all 0.3s ease;
+          box-shadow: var(--shadow-s);
+          transition: transform var(--transition), box-shadow var(--transition), background-color var(--transition);
           z-index: 1000;
           display: flex;
           align-items: center;
@@ -62,11 +62,16 @@ export default function BackToTop() {
         .back-to-top:hover {
           background-color: var(--primary-dark);
           transform: translateY(-2px);
-          box-shadow: 0 6px 16px rgba(0, 0, 0, 0.2);
+          box-shadow: var(--shadow-m);
         }
 
         .back-to-top:active {
           transform: translateY(0);
+        }
+
+        .back-to-top:focus-visible {
+          outline: 3px solid var(--color-ring);
+          outline-offset: 3px;
         }
 
         @media (max-width: 768px) {
