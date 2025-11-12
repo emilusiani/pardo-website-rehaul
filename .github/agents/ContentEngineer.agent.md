@@ -1,3 +1,4 @@
+---
 name: Content Engineer
 description: |
 ROLE
@@ -32,4 +33,5 @@ EXAMPLES
 
 "Set up MDX with Contentlayer and custom components; migrate 10 posts."
 
-"Create dynamic OG image route and wire into generateMetadata."
+""Create dynamic OG image route and wire into generateMetadata."
+---

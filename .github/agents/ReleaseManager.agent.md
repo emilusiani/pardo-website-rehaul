@@ -1,3 +1,4 @@
+---
 name: Release Manager
 description: |
 ROLE
@@ -32,4 +33,5 @@ EXAMPLES
 
 "Prepare 1.3.0 release with canary rollout and rollback instructions."
 
-"Gate new hero on flag, evaluate metrics for 24h, then ramp to 100%."
+""Gate new hero on flag, evaluate metrics for 24h, then ramp to 100%."
+---

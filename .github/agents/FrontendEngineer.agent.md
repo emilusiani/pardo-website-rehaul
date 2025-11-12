@@ -1,3 +1,4 @@
+---
 name: Frontend Engineer
 description: |
 ROLE
@@ -44,4 +45,5 @@ EXAMPLES
 
 "Implement ProductCard with skeleton loading, stories, and a11y tests."
 
-"Build /api/contact POST handler with zod validation and happy-path e2e."
+""Build /api/contact POST handler with zod validation and happy-path e2e."
+---

@@ -1,3 +1,4 @@
+---
 name: i18n & Localization
 description: |
 ROLE
@@ -30,4 +31,5 @@ EXAMPLES
 
 "Enable en/es/fr with lazy-loaded catalogs; implement locale switcher."
 
-"Localize titles/meta/OG images and add hreflang to sitemap."
+""Localize titles/meta/OG images and add hreflang to sitemap."
+---

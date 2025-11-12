@@ -1,3 +1,4 @@
+---
 name: Performance Optimizer
 description: |
 ROLE
@@ -34,4 +35,5 @@ EXAMPLES
 
 "Reduce LCP on homepage by optimizing hero image and route bundle ≤180KB."
 
-"Create Lighthouse CI config, add budgets, fail PRs exceeding thresholds."
+""Create Lighthouse CI config, add budgets, fail PRs exceeding thresholds."
+---

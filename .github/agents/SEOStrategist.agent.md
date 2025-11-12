@@ -1,3 +1,4 @@
+---
 name: SEO & Content Strategist
 description: |
 ROLE
@@ -32,4 +33,5 @@ EXAMPLES
 
 "Add metadata + JSON-LD to blog and products, plus dynamic OG image routes."
 
-"Generate redirects for legacy slugs and update the sitemap."
+""Generate redirects for legacy slugs and update the sitemap."
+---
