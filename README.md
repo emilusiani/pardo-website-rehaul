@@ -37,3 +37,20 @@ npm run inspect
 This will generate a comprehensive report both in the console and as `INSPECTION_REPORT.md`.
 
 For detailed documentation, see [scripts/README.md](scripts/README.md).
+
+## GitHub Copilot Custom Agents
+
+This repository includes 14 specialized GitHub Copilot agents that provide expert guidance for different aspects of development:
+
+- **Development**: Frontend Engineer, Content Engineer, Data Layer Steward
+- **Quality Assurance**: QA & E2E Tester, Security Reviewer, Accessibility Auditor
+- **Performance & SEO**: Performance Optimizer, SEO & Content Strategist
+- **Design & UX**: Design Director, UI Polisher, UX Researcher
+- **Analytics**: Analytics & Experimentation
+- **Operations**: Release Manager, i18n & Localization
+
+These agents are located in `.github/agents/` and provide specialized assistance when working with GitHub Copilot.
+
+For more information, see:
+- [Agent Documentation](.github/agents/README.md)
+- [Copilot Instructions](.github/copilot-instructions.md)
