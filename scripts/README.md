@@ -1,6 +1,12 @@
-# Website Inspection Agent
+# Website Inspection & Validation Scripts
 
 ## Overview
+
+This directory contains automation scripts for validating and inspecting the PARDO Construction website.
+
+## Available Scripts
+
+### 1. Website Inspection Agent (`inspect-website.js`)
 
 The Website Inspection Agent is an automated tool that analyzes the PARDO Construction website and provides comprehensive suggestions for improvements across six critical areas:
 
@@ -11,9 +17,7 @@ The Website Inspection Agent is an automated tool that analyzes the PARDO Constr
 - ♿ **Accessibility** - WCAG compliance and inclusive design
 - 🔍 **SEO** - Search engine optimization and discoverability
 
-## Quick Start
-
-### Running the Inspection
+#### Running the Inspection
 
 ```bash
 npm run inspect
@@ -24,7 +28,54 @@ This command will:
 2. Display a comprehensive report in the terminal
 3. Generate a detailed markdown report: `INSPECTION_REPORT.md`
 
-### Reading the Report
+### 2. Agent YAML Validator (`validate-agents.js`)
+
+The Agent YAML Validator ensures that all custom agent files in `.github/agents/` have valid YAML front matter with proper indentation.
+
+#### Running the Validator
+
+```bash
+npm run validate-agents
+```
+
+This command will:
+1. Check all `.agent.md` files in `.github/agents/`
+2. Validate YAML front matter structure
+3. Verify proper indentation of multi-line description fields
+4. Report any syntax errors
+
+#### What It Validates
+
+- YAML front matter starts with `---` and ends with `---`
+- Required fields: `name` and `description`
+- Proper indentation of multi-line string content (description field)
+- Reports specific line numbers where errors occur
+
+#### Example Output
+
+```
+======================================================================
+YAML VALIDATION REPORT FOR AGENT FILES
+======================================================================
+
+📄 FrontendEngineer.agent.md
+   ✅ VALID YAML
+
+📄 ContentEngineer.agent.md
+   ✅ VALID YAML
+
+...
+
+======================================================================
+SUMMARY: 14 valid, 0 errors
+======================================================================
+🎉 All agent files are valid!
+```
+
+## Quick Start
+3. Generate a detailed markdown report: `INSPECTION_REPORT.md`
+
+### Reading the Reports
 
 The agent generates two types of reports:
 

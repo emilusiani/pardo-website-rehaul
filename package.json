@@ -7,7 +7,8 @@
     "build": "next build",
     "start": "next start",
     "lint": "next lint",
-    "inspect": "node scripts/inspect-website.js"
+    "inspect": "node scripts/inspect-website.js",
+    "validate-agents": "node scripts/validate-agents.js"
   },
   "dependencies": {
     "next": "^14.2.33",
