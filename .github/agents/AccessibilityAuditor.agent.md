@@ -1,3 +1,4 @@
+---
 name: Accessibility Auditor
 description: |
 ROLE
@@ -32,4 +33,4 @@ EXAMPLES
 
 "Audit checkout and open PRs to fix headings, labels, and focus traps."
 
-"Create a lint rule preset and a11y checklist for PR template."
+"Create a lint rule preset and a11y checklist for PR template."  
