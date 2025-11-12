@@ -1,0 +1,130 @@
+{
+  "$schema": "https://json.schemastore.org/github-copilot-agents.json",
+  "version": "1.0.0",
+  "agents": [
+    {
+      "name": "Frontend Engineer",
+      "file": "FrontendEngineer.agent.md",
+      "category": "development",
+      "tags": ["nextjs", "typescript", "react", "frontend"],
+      "description": "Implement features in Next.js + TypeScript with strong typing, runtime validation, tests, and stories."
+    },
+    {
+      "name": "Content Engineer",
+      "file": "ContentEngineer.agent.md",
+      "category": "development",
+      "tags": ["cms", "sanity", "content"],
+      "description": "Manage content architecture and CMS integration with Sanity."
+    },
+    {
+      "name": "Data Layer Steward",
+      "file": "DataLayer.agent.md",
+      "category": "development",
+      "tags": ["api", "data", "validation"],
+      "description": "Ensure robust data fetching, caching, and state management."
+    },
+    {
+      "name": "QA & E2E Tester",
+      "file": "QATester.agent.md",
+      "category": "quality",
+      "tags": ["testing", "playwright", "qa"],
+      "description": "Create and maintain comprehensive test suites with Playwright and unit tests."
+    },
+    {
+      "name": "Security Reviewer",
+      "file": "SecurityAuditor.agent.md",
+      "category": "quality",
+      "tags": ["security", "owasp", "audit"],
+      "description": "Identify and fix security vulnerabilities following OWASP guidelines."
+    },
+    {
+      "name": "Accessibility Auditor",
+      "file": "AccessibilityAuditor.agent.md",
+      "category": "quality",
+      "tags": ["accessibility", "a11y", "wcag"],
+      "description": "Ensure WCAG compliance and accessibility best practices."
+    },
+    {
+      "name": "Performance Optimizer",
+      "file": "PerformanceOptimizer.agent.md",
+      "category": "performance",
+      "tags": ["performance", "web-vitals", "optimization"],
+      "description": "Optimize Core Web Vitals and application performance."
+    },
+    {
+      "name": "SEO & Content Strategist",
+      "file": "SEOStrategist.agent.md",
+      "category": "performance",
+      "tags": ["seo", "meta-tags", "structured-data"],
+      "description": "Improve search engine visibility and content discoverability."
+    },
+    {
+      "name": "Design Director",
+      "file": "designdirector.agent.md",
+      "category": "design",
+      "tags": ["design", "design-system", "tokens"],
+      "description": "Establish and enforce visual design system with design tokens."
+    },
+    {
+      "name": "UI Polisher",
+      "file": "UIPolisher.agent.md",
+      "category": "design",
+      "tags": ["ui", "css", "animations"],
+      "description": "Refine user interface details and micro-interactions."
+    },
+    {
+      "name": "UX Researcher",
+      "file": "UXResearcher.agent.md",
+      "category": "design",
+      "tags": ["ux", "research", "analytics"],
+      "description": "Analyze user experience and provide insights based on data."
+    },
+    {
+      "name": "Analytics & Experimentation",
+      "file": "Analytics.agent.md",
+      "category": "analytics",
+      "tags": ["analytics", "tracking", "ab-testing"],
+      "description": "Implement tracking, analytics, and A/B testing infrastructure."
+    },
+    {
+      "name": "Release Manager",
+      "file": "ReleaseManager.agent.md",
+      "category": "operations",
+      "tags": ["ci-cd", "deployment", "versioning"],
+      "description": "Manage deployment, versioning, and release processes."
+    },
+    {
+      "name": "i18n & Localization",
+      "file": "i18nLocal.agent.md",
+      "category": "operations",
+      "tags": ["i18n", "localization", "translation"],
+      "description": "Implement internationalization and localization features."
+    }
+  ],
+  "categories": {
+    "development": {
+      "label": "Development",
+      "description": "Agents for feature implementation and code development"
+    },
+    "quality": {
+      "label": "Quality Assurance",
+      "description": "Agents for testing, security, and accessibility"
+    },
+    "performance": {
+      "label": "Performance & SEO",
+      "description": "Agents for optimization and search engine visibility"
+    },
+    "design": {
+      "label": "Design & UX",
+      "description": "Agents for visual design and user experience"
+    },
+    "analytics": {
+      "label": "Analytics",
+      "description": "Agents for tracking and experimentation"
+    },
+    "operations": {
+      "label": "Operations",
+      "description": "Agents for deployment and operational tasks"
+    }
+  }
+}
