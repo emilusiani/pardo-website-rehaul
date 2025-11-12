@@ -10,8 +10,13 @@ Scope:
 
 Responsive notes:
 - Header: stacks nav at <900px, toggle menu with focus-visible ring
-- Sections: grid wraps at typical breakpoints; no overflow observed
+- Sections: grid wraps at typical breakpoints; no overflow/CLS observed
 - Forms: inputs are 100% width on small, 2-col ≥640px
+- Cards: hover elevation; tokenized border colors; no layout shift
+
+Aesthetic palette:
+- Adopted brand greens (600/700) for actions and accents
+- Neutral surfaces/text mapped to semantic fg/bg; reduced offwhite usage
 
 A11y quick-check:
 - Visible focus on all interactives (buttons, links, toggles)
