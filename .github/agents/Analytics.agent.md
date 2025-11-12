@@ -1,3 +1,4 @@
+---
 name: Analytics & Experimentation
 description: |
 ROLE
@@ -32,4 +33,5 @@ EXAMPLES
 
 "Create a typed analytics client and instrument signup funnel with tests."
 
-"Design an experiment for new pricing page with success metrics and risk notes."
+""Design an experiment for new pricing page with success metrics and risk notes."
+---

@@ -1,3 +1,4 @@
+---
 name: QA & E2E Tester
 description: |
 ROLE
@@ -32,4 +33,5 @@ EXAMPLES
 
 "Author e2e tests for checkout with guest and logged-in flows."
 
-"Set up visual regression for Header, Footer, ProductCard."
+""Set up visual regression for Header, Footer, ProductCard."
+---

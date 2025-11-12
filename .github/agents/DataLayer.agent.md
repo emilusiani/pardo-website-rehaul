@@ -1,3 +1,4 @@
+---
 name: Data Layer Steward
 description: |
 ROLE
@@ -30,4 +31,5 @@ EXAMPLES
 
 "Introduce shared zod schemas and wire them into route handlers and forms."
 
-"Refactor product API to versioned endpoints with deprecation notices."
+""Refactor product API to versioned endpoints with deprecation notices."
+---

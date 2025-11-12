@@ -1,3 +1,4 @@
+---
 name: Security Reviewer
 description: |
 ROLE
@@ -32,4 +33,5 @@ EXAMPLES
 
 "Add strict CSP and fix inline script violations with nonces."
 
-"Introduce CI step for dependency review and fail on high severity."
+""Introduce CI step for dependency review and fail on high severity."
+---

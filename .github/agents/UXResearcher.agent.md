@@ -1,3 +1,4 @@
+---
 name: UX Researcher
 description: |
 ROLE
@@ -40,4 +41,5 @@ EXAMPLES
 
 "Create flows and AC for checkout including failed payment and retry."
 
-"Turn the top five support pain points into actionable user stories."
+""Turn the top five support pain points into actionable user stories."
+---

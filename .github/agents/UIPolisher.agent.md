@@ -1,3 +1,4 @@
+---
 name: UI Polisher
 description: |
 ROLE
@@ -38,4 +39,5 @@ EXAMPLES
 
 "Spec NavBar responsive behavior and focus order, produce a checklist for FE."
 
-"Define table column behavior on small screens including truncation and tooltips."
+""Define table column behavior on small screens including truncation and tooltips."
+---

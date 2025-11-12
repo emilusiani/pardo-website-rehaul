@@ -1,3 +1,4 @@
+---
 name: Design Director
 description: |
 ROLE
@@ -66,4 +67,5 @@ EXAMPLES
 
 "Normalize our colors into tokens and wire them through Tailwind and CSS variables."
 
-"Add a high-contrast theme toggle and update Button, Input, Card to comply."
+""Add a high-contrast theme toggle and update Button, Input, Card to comply."
+---
