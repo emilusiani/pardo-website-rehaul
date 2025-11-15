@@ -18,7 +18,6 @@ export default async function Page() {
         <div className="hero-media">
           <Image src="/assets/image4.jpg" alt="Grand hotel exterior with palm trees and illuminated entrance" fill priority style={{ objectFit: 'cover' }} />
           <div className="hero-overlay" />
-          <div className="logo-watermark" aria-hidden="true" />
         </div>
         <div className="wrap hero-inner">
           <span className="hero-tag">Hospitality Remodeling</span>
@@ -76,9 +75,6 @@ export default async function Page() {
         <div className="wrap banner-inner">
           <div className="banner-media">
             <Image src="/assets/image1.jpg" alt="Hotel exterior with illuminated facade and entry plaza at night" width={1200} height={800} loading="lazy" />
-            <div className="banner-badge">
-              <Image src="/assets/logo.png" alt="" width={24} height={24} loading="lazy" />
-            </div>
           </div>
           <div className="banner-copy">
             <h2>Reliable, Schedule‑Driven Delivery</h2>
@@ -105,7 +101,6 @@ export default async function Page() {
                   <span className="tag">{p.tag}</span>
                   <h3>{p.title}</h3>
                   <p>{p.summary}</p>
-                  <Image className="project-corner-logo" src="/assets/logo.png" alt="" width={22} height={22} loading="lazy" />
                 </div>
               </article>
             ))}
@@ -130,14 +125,11 @@ export default async function Page() {
       <section id="contact" className="section">
         <div className="wrap">
           <div className="cta">
-            <div className="cta-logo" aria-hidden="true">
-              <Image src="/assets/logo.png" alt="" width={46} height={46} loading="lazy" />
-            </div>
             <h2>Ready to Plan Your Next Property Upgrade?</h2>
             <p>Engage our team for a structured feasibility review—phasing strategy, risk matrix, and budget validation tailored to your asset.</p>
-            
+
             <ContactForm />
-            
+
             <div className="cta-actions" style={{ marginTop: '2rem' }}>
               <p style={{ textAlign: 'center', marginBottom: '1rem' }}>Or reach us directly:</p>
               <a className="btn outline" href="mailto:info@pardoconstructionllc.com">Email Us</a>
