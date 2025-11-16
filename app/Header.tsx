@@ -25,7 +25,7 @@ export default function Header() {
     <header className="site-header" role="banner">
       <div className="wrap nav">
         <a href="#home" className="brand" aria-label="Pardo Construction LLC, Home" onClick={handleNavClick}>
-          <Image className="logo" src="/assets/logo.png" alt="Pardo Construction LLC logo" width={160} height={44} />
+          <Image className="logo" src="/assets/logo.png" alt="Pardo Construction LLC logo" width={44} height={44} />
           <span className="sr-only">PARDO Construction, LLC</span>
         </a>
         <button
