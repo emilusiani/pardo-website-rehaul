@@ -1,0 +1,13 @@
+{
+  "github.copilot.mcpServers": {
+    "chrome-devtools": {
+      "command": "npx",
+      "args": [
+        "-y",
+        "@modelcontextprotocol/server-chrome-devtools",
+        "--host",
+        "YOUR_TUNNELED_HOST:9222"
+      ]
+    }
+  }
+}
